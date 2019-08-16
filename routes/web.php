@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::group(['prefix'=> '/'], function(){
+  Route::get('/', 'LandingController@index')->name('landing.homepage');
+  Route::get('/about', 'LandingController@about')->name('landing.homepage');
+});
+
+/*Route::group(['middleware'] => ['auth'], function(){
+  Route::resource('/', 'HomeController', [
+    'only' => ['index']
+  ]);
+});*/
