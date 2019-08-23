@@ -114,6 +114,22 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+      'name_residential' => 'Name',
+      'email_residential' => 'Email',
+      'password_residential' => 'Password',
+      'password_confirmation_residential' => 'Retype Password',
+      'address_residential' => 'Address',
+      'phone_residential' => 'Phone',
+      'fullname_technician' => 'Fullname',
+      'email_technician' => 'Email',
+      'password_technician' => 'Password',
+      'password_confirmation_technician' => 'Retype Password',
+      'address_technician' => 'Address',
+      'gender_technician' => 'Gender',
+      'license_technician' => 'License',
+      'experience_technician' => 'Experience',
+      'charges_technician' => 'Charges',
+    ],
 
 ];

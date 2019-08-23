@@ -25,4 +25,15 @@ class LandingController extends Controller
   {
       return view('source_file.Landing.about');
   }
+
+  /**
+   * Show the application dashboard.
+   *
+   * @return \Illuminate\Http\Response
+   */
+  public function contact()
+  {
+      return view('source_file.Landing.contact');
+  }
+
 }

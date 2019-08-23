@@ -1,0 +1,18 @@
+html {
+  visibility:hidden;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #5bc0de;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+#loadings1 {
+  padding-top:25px;
+  padding-bottom:25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}

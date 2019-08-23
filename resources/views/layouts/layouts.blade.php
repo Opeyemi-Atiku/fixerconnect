@@ -13,40 +13,44 @@
 	<title>Job Hunt</title>
 
 	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
-  <link rel="stylesheet" href="css/apps/fonts/maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/colors/colors.css" />
-	<link rel="stylesheet" href="css/apps/icons.css">
-	<link rel="stylesheet" href="css/apps/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="css/apps/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/apps/responsive.css" />
-	<link rel="stylesheet" type="text/css" href="css/apps/chosen.css" />
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap/bootstrap-grid.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap/bootstrap.css')}}" />
+  <link rel="stylesheet" href="{{URL::asset('css/apps/fonts/maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/colors/colors.css')}}" />
+	<link rel="stylesheet" href="{{URL::asset('css/apps/icons.css')}}">
+	<link rel="stylesheet" href="{{URL::asset('css/apps/animate.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/style.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/responsive.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/chosen.css')}}" />	
   <!-- STyles -->
+
+	<!--Jquery-->
+	<script src="{{URL::asset('js/jquery/jquery.min.js')}}" type="text/javascript"></script>
 
 </head>
 <body>
+	<div class="page-loading">
+		<img src="{{URL::asset('images/loader.gif')}}" alt="" />
+	</div>
+	<div class="theme-layout" id="scrollup">
+		<!--header-->
+		@include('layouts.inc.header')
+		<!--content-->
+		@yield('content')
+		<!--footer-->
+		@include('layouts.inc.footer')
+	</div>
 
-<div class="theme-layout" id="scrollup">
-	<!--header-->
-	@include('layouts.inc.header')
-	<!--content-->
-	@yield('content')
-	<!--footer-->	
-	@include('layouts.inc.footer')
-</div>
 
-<script src="js/jquery/jquery.min.js" type="text/javascript"></script>
-<script src="js/jquery/counter.js" type="text/javascript"></script>
-<script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/bootstrap/mouse.js" type="text/javascript"></script>
-<script data-cfasync="false" src="js/apps/email-decode.min.js"></script>
-<script src="js/apps/modernizr.js" type="text/javascript"></script>
-<script src="js/apps/script.js" type="text/javascript"></script>
-<script src="js/apps/wow.min.js" type="text/javascript"></script>
-<script src="js/apps/slick.min.js" type="text/javascript"></script>
-<script src="js/apps/parallax.js" type="text/javascript"></script>
-<script src="js/apps/select-chosen.js" type="text/javascript"></script>
-
+	<script src="{{URL::asset('js/jquery/counter.js')}}" type="text/javascript"></script>
+	<script src="{{URL::asset('js/bootstrap/bootstrap.min.js')}}" type="text/javascript"></script>
+	<script src="{{URL::asset('')}}js/bootstrap/mouse.js" type="text/javascript"></script>
+	<script data-cfasync="false" src="{{URL::asset('js/apps/email-decode.min.js')}}"></script>
+	<script src="{{URL::asset('js/apps/modernizr.js')}}" type="text/javascript"></script>
+	<script src="{{URL::asset('js/apps/script.js')}}" type="text/javascript"></script>
+	<script src="{{URL::asset('js/apps/wow.min.js')}}" type="text/javascript"></script>
+	<script src="{{URL::asset('js/apps/slick.min.js')}}" type="text/javascript"></script>
+	<script src="{{URL::asset('js/apps/parallax.js')}}" type="text/javascript"></script>
+	<script src="{{URL::asset('js/apps/select-chosen.js')}}" type="text/javascript"></script>
 </body>
 </html>
