@@ -1,0 +1,35 @@
+1.Bidding hidden ---done
+
+2.Technician Chat Should Also be on Job and Timing --done
+
+
+
+3.Add Review to Technician --Done
+
+4.Technician Accept and Decline id-5 Done
+
+5.Record Technician Location --leave
+
+
+
+6.Technician Search --
+
+7.Technican List
+
+
+
+---8.Available Date---
+
+9.Residential and Customer - Email Verification
+
+10.Technician - License Verification
+
+
+
+
+
+11. link on verificat_token_
+12. link on image for verification Technician
+13. admin image links
+14 blog image link
+php artisan serve --host 0.0.0.0 --port 8000

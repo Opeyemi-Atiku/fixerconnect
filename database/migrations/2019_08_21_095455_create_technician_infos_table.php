@@ -16,12 +16,14 @@ class CreateTechnicianInfosTable extends Migration
         Schema::create('technician_infos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
-            $table->string('location');
-            $table->string('gender');
+            $table->string('location')->nullable();
+            $table->string('gender')->nullable();
             $table->string('license')->nullable();
-            $table->text('experience');
+            $table->string('profile_image')->default('profile_image.png');
+            $table->text('experience')->nullable();
             $table->string('currency')->nullable();
             $table->integer('charges')->nullable();
+            $table->integer('trade_type')->nullable();
             $table->timestamps();
         });
     }

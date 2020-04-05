@@ -1,5 +1,6 @@
 @extends('layouts.layouts')
 
+@section('title', 'Account')
 @section('content')
 
 <!--Title-->
@@ -25,11 +26,6 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <span class="pf-title">Choose Account</span>
-                      @if($errors->has('email'))
-                        <span style="color: #B22222; float: right">
-                          {{$errors->first('email')}}
-                        </span>
-                      @endif
                       @if(session('error'))
                         <span style="color: #B22222; float: right">
                           {{session('error')}}

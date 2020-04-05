@@ -98,8 +98,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'trade_technician' => [
+            'numeric' => 'Invalid Trade selected',
         ],
     ],
 
@@ -121,6 +121,12 @@ return [
       'password_confirmation_residential' => 'Retype Password',
       'address_residential' => 'Address',
       'phone_residential' => 'Phone',
+      'name_commercial' => 'Name',
+      'email_commercial' => 'Email',
+      'password_commercial' => 'Password',
+      'password_confirmation_commercial' => 'Retype Password',
+      'address_commercial' => 'Address',
+      'phone_commercial' => 'Phone',
       'fullname_technician' => 'Fullname',
       'email_technician' => 'Email',
       'password_technician' => 'Password',
@@ -130,6 +136,10 @@ return [
       'license_technician' => 'License',
       'experience_technician' => 'Experience',
       'charges_technician' => 'Charges',
+      'trade_technician' => "Trade",
+      'withdraw_amount' => 'Amount',
+      'withdraw_email' => 'Email',
+      'payout amount' => 'Pay out'
     ],
 
 ];

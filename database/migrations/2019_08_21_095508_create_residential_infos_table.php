@@ -16,8 +16,10 @@ class CreateResidentialInfosTable extends Migration
         Schema::create('residential_infos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
-            $table->string('location');
-            $table->bigInteger('contact_number');
+            $table->string('location')->nullable();
+            $table->string('profile_image')->default('profile_image.png');
+            $table->bigInteger('contact_number')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

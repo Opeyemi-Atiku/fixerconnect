@@ -1,0 +1,147 @@
+.carousel .testimonial {
+  color: #fff;
+  position: relative;
+  background: #9b9b9b;
+  padding: 15px;
+  margin: 0 0 20px 20px;
+}
+.carousel .testimonial p {
+  text-indent: 40px;
+  line-height: 21px;
+  margin: 0;
+}
+.carousel .item .row > div:first-child .media {
+  margin-left: 0;
+}
+.carousel .testimonial::after {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+.carousel .media img {
+  width: 75px;
+  height: 75px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border: 2px solid #fff;
+}
+.media-body, .media-left, .media-right {
+  display: table-cell;
+  vertical-align: top;
+}
+.testimonial {
+  border: 1px solid #0077b5;
+  padding: 15px;
+  border-radius: 20px;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 70px;
+  margin-right: 15px;
+  height: 70px;
+  border-radius: 12px;
+}
+ul.stars {
+  padding-left: 0px;
+  list-style: none;
+  width: 100%;
+}
+ul.stars li {
+  display: inline-block;
+}
+ul.stars li i {
+  color: #e0cf00;
+}
+.owl-dots {
+  display: none;
+}
+
+
+input, submit, button {border-radius:0 !important; box-shadow:none !important;}
+a
+ {
+	color: #000;
+	text-decoration:none;
+}
+a:hover
+{
+	color: #000;
+	text-decoration:underline;
+}
+h1
+{
+	color:#fff;
+font-family: 'Anton', sans-serif;
+	font-weight:500;
+
+
+
+}
+h2, h3, h4, h5, h6
+{font-family: 'Anton', sans-serif;
+	color:#000;
+	font-weight:500;
+}
+
+.glyphicon-search:before {
+    content: "\e003";
+    font-family: 'Glyphicons Halflings';
+}
+select { outline:none !important;}
+h1, h2, h3, h4, h5, h6, p
+ {
+	margin-top: 0;
+	padding: 0px;
+	margin-right: 0;
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+p
+{
+	line-height: 20px;
+	color:#000;
+
+}
+p:last-child
+{
+	margin-bottom:0px;
+
+}
+h1
+{
+	font-size:30px;
+}
+
+h2
+{
+	font-size: 26px;
+}
+h3
+{
+	font-size: 24px;
+}
+h4
+{font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+h5
+{
+	font-size: 18px;
+}
+h6
+{
+	font-size: 16px;
+}
+:before, :after
+{
+}
+.clear:after
+{
+	content:"";
+	width:100%;
+	clear:both;
+	display:table;
+}

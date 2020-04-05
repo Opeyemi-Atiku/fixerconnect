@@ -10,18 +10,20 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- CSRF Token -->
 
-	<title>Job Hunt</title>
+	<title>@yield('title', '')</title>
 
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap/bootstrap-grid.css')}}" />
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap/bootstrap.css')}}" />
-  <link rel="stylesheet" href="{{URL::asset('css/apps/fonts/maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')}}" />
+    <link rel="stylesheet" href="{{URL::asset('css/apps/fonts/maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')}}" />
 	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/colors/colors.css')}}" />
 	<link rel="stylesheet" href="{{URL::asset('css/apps/icons.css')}}">
 	<link rel="stylesheet" href="{{URL::asset('css/apps/animate.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/style.css')}}" />
-	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/responsive.css')}}" />
-	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/chosen.css')}}" />	
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/style11.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/responsives.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/chosen.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{URL::asset('css/apps/logo2.css')}}" />
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkwr5rmzY9btU08sQlU9N0qfmo8YmE91Y&callback=loadMap"></script>
   <!-- STyles -->
 
 	<!--Jquery-->
@@ -30,7 +32,7 @@
 </head>
 <body>
 	<div class="page-loading">
-		<img src="{{URL::asset('images/loader.gif')}}" alt="" />
+		<img src="{{URL::asset('images/loaders.gif')}}" alt="" />
 	</div>
 	<div class="theme-layout" id="scrollup">
 		<!--header-->
@@ -52,5 +54,6 @@
 	<script src="{{URL::asset('js/apps/slick.min.js')}}" type="text/javascript"></script>
 	<script src="{{URL::asset('js/apps/parallax.js')}}" type="text/javascript"></script>
 	<script src="{{URL::asset('js/apps/select-chosen.js')}}" type="text/javascript"></script>
+	<script src="{{URL::asset('js/apps/tag.js')}}" type="text/javascript"></script>
 </body>
 </html>

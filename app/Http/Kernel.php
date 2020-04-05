@@ -55,5 +55,9 @@ class Kernel extends HttpKernel
         'verify.email' => \App\Http\Middleware\VerifyEmail::class,
         'account' => \App\Http\Middleware\Account::class,
         'account_set' => \App\Http\Middleware\AccountSet::class,
+        'check' => \App\Http\Middleware\ChecKAccount::class,
+        'password' => \App\Http\Middleware\CheckPassword::class,
+        'password_check' => \App\Http\Middleware\CheckPasswordAvailable::class,
+        'suspend_check' => \App\Http\Middleware\CheckSuspend::class,
     ];
 }

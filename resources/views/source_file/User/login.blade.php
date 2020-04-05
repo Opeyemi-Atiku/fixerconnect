@@ -1,5 +1,6 @@
 @extends('layouts.layouts')
 
+@section('title', 'Login')
 @section('content')
 <section>
   <div class="block no-padding  gray">
@@ -60,8 +61,8 @@
               <div class="extra-login">
                 <span>Or</span>
                 <div class="login-social">
-                  <a class="fb-login" href="#" title=""><i class="fa fa-facebook"></i></a>
-                  <a class="tw-login" href="#" title=""><i class="fa fa-twitter"></i></a>
+                  <a class="fb-login" href="{{URL::asset('social/facebook')}}" title=""><i class="fa fa-facebook"></i></a>
+                  <a class="gl-login" href="{{URL::asset('social/google')}}" title=""><i class="fa fa-google-plus"></i></a>
                 </div>
               </div>
             </div>
